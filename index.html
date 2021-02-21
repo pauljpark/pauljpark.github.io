@@ -4,9 +4,87 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="main.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Inter">
+    <link rel="stylesheet" href="https://fontawesome.com/icons/js-square?style=brands.css">
+    <script src="https://kit.fontawesome.com/ac063006f8.js" crossorigin="anonymous"></script>
     <title>Document</title>
 </head>
 <body>
-    <header>hello world!</header>
+    <nav>
+        <span class="toggle" id="js-navbar-toggle">
+            <i class="fa fa-bars"></i>
+        </span>
+        <ul class="main-nav">
+            <li class="name">Paul Park</li>
+                <ul class="mid-nav">
+                    <li>skills</li>
+                    <li>projects</li>
+                    <li>experience</li>
+                </ul>
+            <li>contact</li>
+        </ul>
+    </nav>
+    <i class="fas fa-caret-square-up" id="square"></i>
+    <div class="intro-container">
+        <img src='./assets/example.png' class="example">
+        <header class="hi">Hi! I'm Paul.</header>
+        <p class="text">
+            I am an aspiring front-end developer with a passion for innovation and growth.
+        </p>
+    </div>
+    <div class="skills-background">
+        <header class="skills-header">skills</header>
+        <div class="skills-container">
+            <div class="bar">
+                <div class="info">
+                    <span>HTML</span>
+                </div>
+                <div class="skills html"><span></span></div>
+            </div>
+            <div class="bar">
+                <div class="info">
+                    <span>CSS</span>
+                </div>
+            <div class="skills css"><span></span></div>
+            </div><div class="bar">
+                <div class="info">
+                    <span>JAVASCRIPT</span>
+                </div>
+                <div class="skills js"><span></span></div>
+            </div>
+            <div class="bar">
+                <div class="info">
+                    <span>REACTJS</span>
+                </div>
+                <div class="skills react"><span></span></div>
+            </div>
+            <div class="bar">
+                <div class="info">
+                    <span>NODEJS</span>
+                </div>
+                <div class="skills node"><span></span></div>
+            </div>
+            <div class="bar">
+                <div class="info">
+                    <span>EXPRESS</span>
+                </div>
+                <div class="skills express"><span></span></div>
+            </div>
+            <div class="bar">
+                <div class="info">
+                    <span>MONGODB</span>
+                </div>
+                <div class="skills mongo"><span></span></div>
+            </div>
+        </div>
+    </div>
+    <div class="projects-background">
+        <header class="projects-header">projects</header>
+            <div class="projects-container">
+                <img src="./assets/amani.png" alt="img" class="project1">
+                <img src="./assets/plugpoint.png" alt="img" class="project2">
+            </div>
+    </div>
 </body>
 </html>
