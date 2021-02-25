@@ -8,31 +8,40 @@
     <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Inter">
     <link rel="stylesheet" href="https://fontawesome.com/icons/js-square?style=brands.css">
     <script src="https://kit.fontawesome.com/ac063006f8.js" crossorigin="anonymous"></script>
+    <script src="script.js"></script>
     <title>Document</title>
 </head>
 <body>
     <nav>
         <ul class="main-nav">
-            <li class="name">Paul Park</li>
+            <li><a href="https://pauljpark.github.io/" class="name">Paul Park</a></li>
                 <ul class="mid-nav">
-                    <li>skills</li>
-                    <li>projects</li>
-                    <li>experience</li>
+                    <li><a href="#skills">skills</a></li>
+                    <li><a href="#projects">projects</a></li>
+                    <li><a href="#experience">experience</a></li>
                 </ul>
-            <li><i class="fab fa-linkedin" id='linkedin'></i>  <i class="fab fa-github-square" id='github'></i></li>
+            <li>
+                <a href="https://www.linkedin.com/in/paul-park77/" target="_blank">
+                    <i class="fab fa-linkedin" id='linkedin'></i>
+                </a>  
+                <a href="https://github.com/pauljpark" target="_blank">
+                    <i class="fab fa-github-square" id='github'></i>
+                </a>
+            </li>
         </ul>
     </nav>
-    <i class="fas fa-moon" id='square'></i>
+    <i class="fas fa-moon" id='dark'></i>
+    <i class="fas fa-sun" id='light'></i>
     <section class="intro-background">
         <section class="intro-container">
-            <img src='./assets/example.png' class="example">
+            <img src='./assets/profile.png' class="profile-pic">
             <header class="hi">Hi! I'm Paul.</header>
             <p class="text">
                 I am an aspiring front-end developer with a passion for innovation and growth.
             </p>
         </section>
     </section>
-    <section class="skills-background">
+    <section class="skills-background" id="skills">
         <header class="skills-header">skills</header>
         <div class="skills-container">
             <div class="bar">
@@ -78,26 +87,30 @@
             </div>
         </div>
     </section>
-    <section class="projects-background">
+    <section class="projects-background" id="projects">
         <header class="projects-header">projects</header>
             <div class="projects-container">
-                <div class="project1-container">
-                    <img src="./assets/amani.png" alt="img" class="project1">
-                    <div class="project-text">
-                        <p style="margin-bottom: 5px;">An e-commerce web application based on the premise of giraffe and animal conservation</p>
-                        <p style="font-weight: 600;">github ></p>
+                <a href="https://github.com/pauljpark/AmaniClothingCo" target="_blank">
+                    <div class="project1-container">
+                        <img src="./assets/amani.png" alt="img" class="project1">
+                            <div class="project-text">
+                                <p style="margin-bottom: 5px;">An e-commerce web application based on the premise of giraffe conservation</p>
+                                <p style="font-weight: 600;">github ></p>
+                            </div>
                     </div>
-                </div>
-                <div class="project2-container">
-                    <img src="./assets/plugpoint.png" alt="img" class="project2">
-                    <div class="project-text">
-                        <p style="padding: 0px 10px 0px 10px; margin-bottom: 5px">While electric vehicle popularity continues to rise, PlugPoint is a mobile EV charger locator app that allows users to navigate to and save local charging stations</p>
-                        <p style="font-weight: 600;">github ></p>
+                </a>
+                <a href="https://github.com/pauljpark/Plug-Point" target="_blank">
+                    <div class="project2-container">
+                        <img src="./assets/plugpoint.png" alt="img" class="project2">
+                        <div class="project-text">
+                            <p style="padding: 0px 10px 0px 10px; margin-bottom: 5px">While electric vehicle popularity continues to rise, PlugPoint is a mobile EV charger locator app that allows users to navigate to and save local charging stations</p>
+                            <p style="font-weight: 600;">github ></p>
+                        </div>
                     </div>
-                </div>
+                </a>
             </div>
     </section>
-    <section class="experience-background">
+    <section class="experience-background" id="experience">
         <header class="experience-header">experience</header>
         <section class="timeline">
             <p class="year yr17">2017</p>

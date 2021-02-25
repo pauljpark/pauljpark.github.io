@@ -34,7 +34,16 @@ nav {
     display: flex;
     justify-content: space-evenly;
     width: 25%;
-    border: 2px solid blue;
+}
+@media screen and (max-width: 882px) {
+    .mid-nav {
+        display: none;
+    }
+}
+
+a {
+    color: #1D1D1F;
+    text-decoration: none;
 }
 
 #linkedin, #github {
@@ -48,7 +57,7 @@ nav {
     font-size: 18px;
 }
 
-#square {
+#dark {
     position: fixed;
     top: 690px;
     left: 20px;
@@ -57,12 +66,26 @@ nav {
     background-color: #414141;
     padding: 10px;
     border-radius: 10px;
-    z-index: 1;
+    z-index: 2;
+    cursor: pointer;
+}
+
+#light {
+    display: none;
+    position: fixed;
+    top: 690px;
+    left: 20px;
+    font-size: 23px;
+    color: #414141;
+    background-color: #fff;
+    padding: 10px;
+    border-radius: 10px;
+    z-index: 2;
     cursor: pointer;
 }
 
 .intro-background {
-    background-color: #F6F6F6;
+    background-color: #fff;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -79,12 +102,11 @@ nav {
     align-content: center;
     text-align: center;
     align-self: center;
-    border: 4px solid green;
     max-width: 800px;
     width: 100%;
 }
 
-.example {
+.profile-pic {
     width: 300px;
     border-radius: 12px;
     box-shadow: 5px 5px 10px rgba(0,0,0,0.2);
@@ -186,7 +208,6 @@ nav {
     flex-direction: column;
     justify-content: space-evenly;
     align-items: center; 
-    border: 4px solid green;
     max-width: 800px;
     width: 100%
 }
@@ -206,14 +227,14 @@ nav {
     bottom: 4px;
     left: 0;
     right: 0;
-    border: 1px solid seagreen
 }
 .project-text:hover {
     cursor: pointer;
 }
 
 .project2 {
-    height: 600px;
+    max-height: 525px;
+    height: 100%;
     position: relative;
     top: 0;
     transition: top ease 0.5s;
@@ -222,29 +243,27 @@ nav {
 
 .project1-container {
     position: relative;
-    border: 3px solid blue;
     text-align: center;
     margin-bottom: 50px;
 }
 .project1-container:hover > .project1 {
-    top: -47px;
+    top: -50px;
     cursor: pointer
 }
-@media screen and (max-width: 807px) {
+@media screen and (max-width: 721px) {
     .project1-container:hover > .project1 {
-        top: -66px;
+        top: -70px;
         cursor: pointer
     }
 }
 
 .project2-container {
-    border: 3px solid blue;
     text-align: center;
     position: relative;
     margin-top: 25px;
 }
 .project2-container:hover > .project2 {
-    top: -123px;
+    top: -128px;
     cursor: pointer
 }
 
@@ -264,12 +283,11 @@ nav {
     position: relative;
     max-width: 1200px;
     margin: 0 auto;
-    border: 4px solid green;
 }
 
 /* The actual timeline (the vertical ruler) */
 .timeline::after {
-    content: '';
+    content: attr(line);
     position: absolute;
     width: 6px;
     background-color: #1D1D1F;
@@ -315,7 +333,6 @@ nav {
     position: relative;
     background-color: inherit;
     width: 50%;
-    border: 4px solid blue;
 }
 
 /* The actual content */
@@ -364,12 +381,12 @@ nav {
 
 /* Fix the circle for containers on the right side */
 .right::after {
-    left: -14px
+    left: -10px
 }
 
 /* Fix the circle for containers on the right side */
 .left::after {
-    right: -14px
+    right: -10px
 }
 
 h3 {
