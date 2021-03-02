@@ -59,8 +59,8 @@ a {
 
 #dark {
     position: fixed;
-    top: 690px;
-    left: 20px;
+    bottom: 2vh;
+    left: 1vw;
     font-size: 23px;
     color: #fff;
     background-color: #414141;
@@ -73,8 +73,8 @@ a {
 #light {
     display: none;
     position: fixed;
-    top: 690px;
-    left: 20px;
+    bottom: 2vh;
+    left: 1vw;
     font-size: 23px;
     color: #414141;
     background-color: #fff;
@@ -263,7 +263,7 @@ a {
     margin-top: 25px;
 }
 .project2-container:hover > .project2 {
-    top: -128px;
+    top: -90px;
     cursor: pointer
 }
 
